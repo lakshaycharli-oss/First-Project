@@ -1,0 +1,17 @@
+# Simple Calculator without if/else
+
+# Take input
+num1 = float(input("Enter first number: "))
+op = input("Enter operator (+, -, *, /, %): ")
+num2 = float(input("Enter second number: "))
+
+# Dictionary mapping operators to operations
+result = {
+    '+': num1 + num2,
+    '-': num1 - num2,
+    '*': num1 * num2,
+    '/': num1 / num2,
+    '%': num1 % num2
+}[op]
+
+print("Result:", result)
